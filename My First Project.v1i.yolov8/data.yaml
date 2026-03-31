@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['sk']
+
+roboflow:
+  workspace: trongs-workspace-6zqga
+  project: my-first-project-irmsa
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/trongs-workspace-6zqga/my-first-project-irmsa/dataset/1
