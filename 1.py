@@ -5,7 +5,7 @@ model = YOLO("yolov8n.pt")
 
 # 训练时直接传入数据增强参数
 results = model.train(
-    data="/kaggle/working/yolov8-second/MInecraft Player.v2i.yolov8/data.yaml",
+    data="/kaggle/working/yolov8-third/My First Project.v1i.yolov8/data.yaml",
     epochs=100,
     imgsz=640,
     # 下面是数据增强参数 (数值代表概率或变化幅度)
