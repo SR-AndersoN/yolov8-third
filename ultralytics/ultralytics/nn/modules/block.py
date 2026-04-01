@@ -2076,8 +2076,9 @@ class GhostConv(nn.Module):
     def __init__(self, c1, c2, k=1, s=1, g=1, act=True):  # ch_in, ch_out, kernel, stride, groups
         super().__init__()
         c_ = c2 // 2  # hidden channels
-        self.cv1 = Conv(c1, c_, k, s, None, g, act)
-        self.cv2 = Conv(c_, c_, 5, 1, None, c_, act)
+        # 【修复点】：这里显式指定 p=None, g=g, act=act，防止参数错位传给 dilation (d)
+        self.cv1 = Conv(c1, c_, k, s, p=None, g=g, act=act)
+        self.cv2 = Conv(c_, c_, 5, 1, p=None, g=c_, act=act)
 
     def forward(self, x):
         y = self.cv1(x)
