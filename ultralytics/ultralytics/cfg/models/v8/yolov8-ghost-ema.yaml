@@ -1,13 +1,12 @@
 # Ultralytics YOLO 🚀, AGPL-3.0 license
 # YOLOv8-Ghost-EMA object detection model
-parameters:
-  nc: 1  # 这里记得改成你数据集的类别数！
-  scales: # 保持原样即可
-    n: [0.33, 0.25, 1024] 
-    s: [0.33, 0.50, 1024]
-    m: [0.67, 0.75, 768]
-    l: [1.00, 1.00, 512]
-    x: [1.00, 1.25, 512]
+nc: 1  # 这里记得改成你数据集的类别数！
+scales: # 保持原样即可
+  n: [0.33, 0.25, 1024] 
+  s: [0.33, 0.50, 1024]
+  m: [0.67, 0.75, 768]
+  l: [1.00, 1.00, 512]
+  x: [1.00, 1.25, 512]
 
 # YOLOv8.0n backbone
 backbone:
