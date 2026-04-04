@@ -3,7 +3,7 @@ from ultralytics import YOLO
 # 1. 加载你刚刚训练好的“魔改版”最优权重
 # 注意：路径要换成你实际训练生成的 best.pt 的绝对路径
 # 在 Kaggle 中，通常会保存在类似下面这个路径：
-weight_path = "/kaggle/working/yolov8-third/runs/detect/train2/weights/best.pt" 
+weight_path = "/kaggle/working/yolov8-third/runs/detect/train3/weights/best.pt" 
 model = YOLO(weight_path)
 
 # 2. 导出为 ONNX 格式
