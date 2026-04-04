@@ -1,13 +1,13 @@
 # Ultralytics YOLO 🚀, AGPL-3.0 license
 # YOLOv8-Ghost-Only object detection model (Remove EMA for faster FPS)
-parameters:
-  nc: 1  # 记得改成你的数据集类别数
-  scales: # 保持原样
-    n: [0.33, 0.25, 1024] 
-    s: [0.33, 0.50, 1024]
-    m: [0.67, 0.75, 768]
-    l: [1.00, 1.00, 512]
-    x: [1.00, 1.25, 512]
+
+nc: 1  # 记得改成你的数据集类别数
+scales: # 保持原样
+  n: [0.33, 0.25, 1024] 
+  s: [0.33, 0.50, 1024]
+  m: [0.67, 0.75, 768]
+  l: [1.00, 1.00, 512]
+  x: [1.00, 1.25, 512]
 
 # YOLOv8 backbone
 backbone:
